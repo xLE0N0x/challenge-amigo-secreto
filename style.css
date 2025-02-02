@@ -4,6 +4,7 @@
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
+    --color-button-disabled: #5b220b;
     --color-text: #444444;
     --color-white: #FFFFFF;
 }
@@ -134,6 +135,13 @@ ul {
     margin: 20px 0;
 }
 
+ol {
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
 .result-list {
     margin-top: 15px;
     color: #05DF05;
@@ -147,6 +155,7 @@ ul {
     display: flex;
     align-items: center;
     width: 100%;
+    margin: 10px;
     padding: 10px 40px;
     color: var(--color-white);
     background-color: var(--color-button);
@@ -159,4 +168,8 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.button-draw:disabled {
+    background: var(--color-button-disabled);
 }
