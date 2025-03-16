@@ -2,6 +2,7 @@
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
+    --color-tertiary-disabled: #444444;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
     --color-button-disabled: #5b220b;
@@ -126,16 +127,14 @@ button {
     background-color: #a1a1a1;
 }
 
+.button-add:disabled {
+    background-color: var(--color-tertiary-disabled);
+    color: var(--color-white);
+}
+
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
-    font-size: 18px;
-    margin: 20px 0;
-}
-
-ol {
     color: var(--color-text);
     font-family: "Inter", sans-serif;
     font-size: 18px;

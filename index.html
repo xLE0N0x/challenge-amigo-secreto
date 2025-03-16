@@ -21,11 +21,11 @@
             <h2 class="section-title">Digite el nombre de sus amigos</h2>
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
-                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+                <button id="btnAdd" class="button-add" onclick="agregarAmigo()">Añadir</button>
             </div>
            
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ol id="listaSorteados" class="name-list" aria-labelledby="listaSorteados" role="list"></ol>
+            <ul id="listaSorteados" class="result-list" aria-labelledby="listaSorteados" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
             <div class="button-container">
@@ -33,8 +33,8 @@
                     <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
                     Sortear amigo
                 </button>
-                <button id="btnReinicio" class="button-draw" onclick="reiniciar()" aria-label="Sortear amigo secreto" disabled>
-                    <img src="assets/reload_circle_outline.png" alt="Ícono para sortear">
+                <button id="btnReinicio" class="button-draw" onclick="reiniciar()" aria-label="reiniciar amigo secreto" disabled>
+                    <img src="assets/reload_circle_outline.png" alt="Ícono para reiniciar">
                     Nueva lista
                 </button>
             </div>
